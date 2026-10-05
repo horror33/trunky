@@ -1,0 +1,50 @@
+:root{--red:#bc002d;--ink:#000;--bg:#fff;--grey:#f1f1f1;--line:#ddd}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.5 "Noto Sans JP","Hiragino Sans","Yu Gothic",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+header{border-bottom:3px solid var(--red);padding:12px 20px}
+header a{color:var(--ink);text-decoration:none;font-weight:700;font-size:20px;display:flex;align-items:center;gap:10px}
+.sun{width:18px;height:18px;border-radius:50%;background:var(--red)}
+main{max-width:720px;margin:0 auto;padding:20px}
+h1{text-align:center;margin:20px 0 4px}
+h2{border-left:5px solid var(--red);padding-left:10px}
+.sub,.c{text-align:center;color:#666}
+button{font:inherit;padding:10px 16px;border:1px solid var(--ink);background:var(--bg);border-radius:8px;cursor:pointer}
+button:hover{background:var(--grey)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+button.red{background:var(--red);border-color:var(--red);color:#fff}
+button:disabled{cursor:default}
+select{font:inherit;padding:8px;border-radius:8px}
+.row{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px}
+.grid button{font-size:34px;padding:28px 10px;display:flex;flex-direction:column;align-items:center;border-width:2px}
+.grid b{font-size:17px}
+.list{display:grid;gap:10px}
+.list button{text-align:left}.list span{color:#666}
+section{margin:20px 0}
+h3{margin:16px 0 6px}
+table{width:100%;border-collapse:collapse}
+th,td{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+th{background:var(--grey)}
+.jp{font-size:1.2em;font-weight:700}
+.rev .h{filter:blur(6px);cursor:pointer}.rev .h.on{filter:none}
+.box{background:var(--grey);border-left:4px solid var(--red);padding:8px 14px;border-radius:4px;margin:10px 0}
+.pick{display:grid;gap:4px;margin:12px 0}
+.pick label{padding:8px 10px;border:1px solid var(--line);border-radius:8px;cursor:pointer}
+.pick small{color:#666}
+.chart{display:flex;flex-wrap:wrap;gap:8px}
+.chart div{width:66px;text-align:center;border:1px solid var(--line);border-radius:8px;padding:6px 0}
+.chart b{display:block;font-size:30px}.chart small{color:var(--red)}
+.big{font-size:110px;text-align:center;line-height:1.2;margin:10px 0}
+.big.sm{font-size:30px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opts button{font-size:20px;padding:14px}
+.good{background:#d8f3dc!important;border-color:#2d6a4f!important}
+.bad{background:#ffd6d6!important;border-color:var(--red)!important}
+.g{color:#2d6a4f;font-weight:700}.r{color:var(--red);font-weight:700}
+.bar{height:12px;background:var(--grey);border-radius:6px;overflow:hidden;margin:10px 0}
+.bar i{display:block;height:100%;background:var(--red)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--grey);padding:6px 12px;border-radius:20px}
+.chips b{font-size:24px;margin-right:6px}
+canvas{background:#fff;border:2px solid var(--ink);border-radius:8px;touch-action:none;display:block;margin:10px auto}
+@media(max-width:480px){.opts{grid-template-columns:1fr}.big{font-size:90px}}
